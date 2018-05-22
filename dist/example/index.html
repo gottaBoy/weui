@@ -11,7 +11,55 @@
     <div class="weui-toptips weui-toptips_warn js_tooltips">错误提示</div>
 
     <div class="container" id="container"></div>
+    <script type="text/html" id="tpl_cargo_account">
 
+<div class="page flex">
+    <div class="flex-container page_account">
+        <div class="flex-item">
+            <div>item1</div>
+        </div>
+        <div class="flex-item">
+            <div>item1</div>
+        </div>
+    </div>
+    <div class="page_header">
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <br>
+        <div class="page__bd page__bd_spacing ">
+            <div class="weui-flex">
+                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
+            </div>
+            <div class="weui-flex">
+                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
+                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
+            </div>
+            <div class="weui-flex">
+                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
+                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
+                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
+            </div>
+            <div class="weui-flex">
+                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
+                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
+                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
+                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
+            </div>
+            <div class="weui-flex">
+                <div><div class="placeholder">weui</div></div>
+                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
+                <div><div class="placeholder">weui</div></div>
+            </div>
+        </div>
+        <div class="page__ft">
+            <a href="javascript:home()"><img src="./images/icon_footer_link.png" /></a>
+        </div>
+    </div>
+</script>
     <script type="text/html" id="tpl_home">
 <div class="page">
     <div class="page__hd">
@@ -24,7 +72,7 @@
         <ul>
             <li>
                 <div class="weui-flex js_category">
-                    <p class="weui-flex__item">表单</p>
+                    <p class="weui-flex__item">例子</p>
                     <img src="./images/icon_nav_form.png" alt="">
                 </div>
                 <div class="page__category js_categoryInner">
@@ -35,6 +83,24 @@
                             </div>
                             <div class="weui-cell__ft"></div>
                         </a>
+                        <a class="weui-cell weui-cell_access js_item" data-id="cargo_account" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p>我的账户</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="weui-flex js_category">
+                    <p class="weui-flex__item">表单</p>
+                    <img src="./images/icon_nav_form.png" alt="">
+                </div>
+                <div class="page__category js_categoryInner">
+                    <div class="weui-cells page__category-content">
+                        
                         <a class="weui-cell weui-cell_access js_item" data-id="button" href="javascript:;">
                             <div class="weui-cell__bd">
                                 <p>Button</p>
@@ -93,6 +159,7 @@
                             </div>
                             <div class="weui-cell__ft"></div>
                         </a>
+                        
                         <a class="weui-cell weui-cell_access js_item" data-id="footer" href="javascript:;">
                             <div class="weui-cell__bd">
                                 <p>Footer</p>
@@ -277,74 +344,6 @@
         });
     });
 </script>
-</script>
-    <script type="text/html" id="tpl_cargo_qhb">
-<div class="page">
-        <div class="page__hd">
-            <h1 class="page__title">Flex</h1>
-            <p class="page__desc">Flex布局</p>
-        </div>
-        <div class="page__bd page__bd_spacing">
-            <div class="weui-flex">
-                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
-            </div>
-            <div class="weui-flex">
-                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
-                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
-            </div>
-            <div class="weui-flex">
-                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
-                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
-                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
-            </div>
-            <div class="weui-flex">
-                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
-                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
-                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
-                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
-            </div>
-            <div class="weui-flex">
-                <div><div class="placeholder">weui</div></div>
-                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
-                <div><div class="placeholder">weui</div></div>
-            </div>
-        </div>
-        <div class="page__ft">
-            <a href="javascript:home()"><img src="./images/icon_footer_link.png" /></a>
-        </div>
-    </div>
-</script>
-    <script type="text/html" id="tpl_cargo_goods">
-<div class="page">
-        <div class="page__hd">
-            <h1 class="page__title">Flex</h1>
-            <p class="page__desc">Flex布局</p>
-        </div>
-        <div class="page__bd page__bd_spacing">
-            <div class="weui-flex">
-                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
-            </div>
-            <div class="weui-flex">
-                <div class="weui-flex__item">
-                    <div class="placeholder"></div>
-                </div>
-                <div class="weui-flex__item">
-                    <div class="placeholder">weui</div>
-                </div>
-                <div class="weui-flex__item">
-                    <div class="placeholder"></div>
-                </div>
-            </div>
-            <div class="weui-flex">
-                <div><div class="placeholder">weui</div></div>
-                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
-                <div><div class="placeholder">weui</div></div>
-            </div>
-        </div>
-        <div class="page__ft">
-            <a href="javascript:home()"><img src="./images/icon_footer_link.png" /></a>
-        </div>
-    </div>
 </script>
     <script type="text/html" id="tpl_button">
 <div class="page">
@@ -2000,6 +1999,69 @@
         ;
     });
 </script>
+</script>
+    <script type="text/html" id="tpl_cargo_qhb">
+<div class="page flex">
+        <div class="page__hd">
+            <h1 class="page__title">Flex</h1>
+            <p class="page__desc">Flex布局</p>
+        </div>
+        <div class="page__bd page__bd_spacing">
+            <div class="weui-flex">
+                <div class="weui-flex__item"></div>
+                <div class="weui-flex__item">
+                    <div class="weui-gallery" style="display: block">
+                        
+                        <div class="weui-gallery__img " style="background-image: url(./images/cargo_qhb_money.png);">
+                            
+                        </div>
+                    </div>
+                    <!-- <div class="weui-gallery-bottom" style="display: block">
+                        
+                        <div class="weui-gallery__submit" style="background-image: url(./images/cargo_qhb_lingqu.png);">
+                            
+                        </div>
+                    </div> -->
+                </div>
+                <div class="weui-flex__item"></div>
+            </div>
+        </div>
+        <div class="page__ft">
+            <a href="javascript:home()"><img src="./images/icon_footer_link.png" /></a>
+        </div>
+    </div>
+</script>
+    <script type="text/html" id="tpl_cargo_goods">
+<div class="page flex">
+        <div class="page__hd">
+            <h1 class="page__title">Flex</h1>
+            <p class="page__desc">Flex布局</p>
+        </div>
+        <div class="page__bd page__bd_spacing">
+            <div class="weui-flex">
+                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
+            </div>
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                    <div class="placeholder"></div>
+                </div>
+                <div class="weui-flex__item">
+                    <div class="placeholder">weui</div>
+                </div>
+                <div class="weui-flex__item">
+                    <div class="placeholder"></div>
+                </div>
+            </div>
+            <div class="weui-flex">
+                <div><div class="placeholder">weui</div></div>
+                <div class="weui-flex__item"><div class="placeholder">weui</div></div>
+                <div><div class="placeholder">weui</div></div>
+            </div>
+        </div>
+        <div class="page__ft">
+            <a href="javascript:home()"><img src="./images/icon_footer_link.png" /></a>
+        </div>
+    </div>
 </script>
     <script src="./zepto.min.js"></script>
     <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>

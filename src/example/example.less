@@ -445,3 +445,65 @@ body, .page {
 .page.slideOut {
     animation: slideOut .2s forwards;
 }
+.weui-gallery {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    z-index: 1000;
+}
+.weui-gallery__img {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    bottom: 20%;
+    left: 10%;
+    background: center center no-repeat;
+    background-size: contain;
+}
+.weui-gallery-bottom{
+    bottom: 40%;
+}
+.weui-gallery__submit {
+    right: 10%;
+    bottom: 40%;
+    left: 10%;
+    height: 50px;
+    background: center center no-repeat;
+    background-size: contain;
+}
+
+.page_header{
+   position: absolute;
+   height: 60px;
+   width: 100%;
+   background-color: #1AAD19;
+}
+
+.page_account{
+    flex-direction:column;
+
+}
+
+.flex-container {
+  display: flex;
+  
+}
+/* 以下为辅助样式 */
+
+.flex-container{ 
+  background-color: #F0f0f0; 
+}
+.flex-container .flex-item{
+  padding:20px;
+  background-color: #B1FF84; 
+}
+.flex-container .flex-item:first-child{ 
+  background-color: #F5DE25; 
+}
+.flex-container .flex-item:last-child{ 
+  background-color: #90D9F7; 
+}
