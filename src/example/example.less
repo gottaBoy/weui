@@ -445,6 +445,32 @@ body, .page {
 .page.slideOut {
     animation: slideOut .2s forwards;
 }
+
+// 自定义
+.wrap{
+    width:100%;
+    height:100%;
+}
+.header,.footer{
+    height:55px;
+}
+.header{
+    background-color: #4294f7;
+}
+.main{
+    display:flex;
+    position:relative;
+}
+.container{
+    position:absolute;
+    width:100%;
+    height: 200px;
+    background-color: #4294f7;
+}
+
+.page__bg_color {
+    color: #4e4e4e;
+}
 .weui-gallery {
     display: none;
     position: fixed;
@@ -483,27 +509,80 @@ body, .page {
    background-color: #1AAD19;
 }
 
-.page_account{
-    flex-direction:column;
 
-}
 
 .flex-container {
-  display: flex;
-  
+  display: flex;  
+  flex-direction:column;
 }
 /* 以下为辅助样式 */
 
 .flex-container{ 
-  background-color: #F0f0f0; 
+  background-color: #FFFFFF; 
 }
 .flex-container .flex-item{
   padding:20px;
-  background-color: #B1FF84; 
+  height: 34%;
+  background-color: #4294f7; 
 }
-.flex-container .flex-item:first-child{ 
-  background-color: #F5DE25; 
+// .flex-container .flex-item:first-child{ 
+//   background-color: #4294f7; 
+// }
+// .flex-container .flex-item:last-child{ 
+//   background-color: #90D9F7; 
+// }
+
+.page_account{
+    display:flex;
+    flex-direction:row;
+    color: #FFFFFF;
+    background-color: #4294f7;
+
+    .account_left{
+       background-color: #FFFFFF;
+    }
+
+    .account_right{
+        background-color: rgb(128, 39, 39);
+     }
 }
-.flex-container .flex-item:last-child{ 
-  background-color: #90D9F7; 
-}
+
+.users-list {
+    &:extend(.list-unstyled);
+    > li {
+      width: 25%;
+      float: left;
+      padding: 10px;
+      text-align: center;
+      img {
+        .border-radius(50%);
+        max-width: 100%;
+        height: auto;
+      }
+      > a:hover {
+        &,
+        .users-list-name {
+          color: #999;
+        }
+      }
+    }
+  }
+  
+  .users-list-name,
+  .users-list-date {
+    display: block;
+  }
+  
+  .users-list-name {
+    font-weight: 600;
+    color: #444;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .users-list-date {
+    color: #999;
+    font-size: 12px;
+  }
+  
